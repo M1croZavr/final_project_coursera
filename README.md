@@ -1,2 +1,2 @@
-# final_project_coursera
-Sentiment analysis classifier for a phone review with an interface. The result of the final project of the specialization Machine learning and data analysis from Yandex and MIPT.
+# Sentiment analysis classifier
+To try web interface use 'User interface and result Week 7' directory. Run classifier_backend.py module in cmd/bash and then open local-server link in web-browser.
