@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Review classifier</title>
+</head>
+  <body>
+    <div class="p-3 mb-2 bg-dark text-white">
+      <blockquote class="blockquote text-center">
+        <h1>
+          Ultra sentiment classifier
+          <small class='text-muted'>Version 1</small>
+        </h1>
+        <footer class="blockquote-footer">by <cite title="Source Title">MicroZavr</cite></footer>
+      </blockquote>
+    </div>
+      <div class="container">
+      <ul class="list-unstyled">
+        <li>To use sentiment classifier do the following steps:
+          <ul>
+            <li>Think about review you want to write</li>
+            <li>Write a review in the form</li>
+            <li>Click submit button!</li>
+          </ul>
+        </li>
+      </ul>
+      <form action="#" method=POST>
+              <!-- <p>Enter text:</p>
+              <p><input type=text name=text rows=10 cols=40></p> -->
+              <div class="form-group">
+                <input type=text class="form-control" id="exampleInputPassword1" name=text placeholder="Enter your review">
+              </div>
+              <p><input class="btn btn-light" type="submit" value="Give me result!"></p>
+      </form>
+      <p>Sentiment prediction:</p>
+      {% if 'negative' in prediction_message %}
+        <p class="text-danger">{{prediction_message}}</p>
+        <div class="progress" style="height: 35px;">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: {{probability}}%" aria-valuenow={{probability}} aria-valuemin="0" aria-valuemax="100">Probability = {{probability}}</div>
+        </div>
+      {% elif 'positive' in prediction_message %}
+        <p class="text-success">{{prediction_message}}</p>
+        <div class="progress" style="height: 35px;">
+          <div class="progress-bar bg-success" role="progressbar" style="width: {{probability}}%" aria-valuenow={{probability}} aria-valuemin="0" aria-valuemax="100">Probability = {{probability}}</div>
+        </div>
+      {% else %}
+        <p class="text-warning">{{prediction_message}}</p>
+        <div class="progress" style="height: 35px;">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: {{probability}}%" aria-valuenow={{probability}} aria-valuemin="0" aria-valuemax="100">Probability = {{probability}}</div>
+        </div>
+      {% endif %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

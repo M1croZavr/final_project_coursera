@@ -1,0 +1,28 @@
+<response>
+Good bank i like it very much
+ positive
+</response>
+<response>
+Good bank i like it very much
+ positive
+</response>
+<response>
+I'm dissapointed, very bad bank do not like it
+probably negative
+</response>
+<response>
+Maybe it's a good bank but maybe it is not
+probably negative
+</response>
+<response>
+Good bank i like it very much
+ positive
+</response>
+<response>
+I'm dissapointed, very bad bank do not like it
+probably negative
+</response>
+<response>
+Maybe it's a good bank but maybe it is not
+probably negative
+</response>
